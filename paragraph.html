@@ -1,0 +1,16 @@
+<html>
+<body>
+ Name: <input type="text" id="myText" value="">
+<p>Click the button to display the value of the value attribute of the text field.</p>
+<input type ="button" onclick="myFunction()" value="try it" >
+<p id="demo"></p>
+<script>
+function myFunction() 
+{
+  var x = document.getElementById("myText").value;
+  document.getElementById("demo").innerHTML = x;
+}
+</script>
+
+</body>
+</html>
