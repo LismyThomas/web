@@ -1,0 +1,46 @@
+<html >
+<head>
+    <title>Register</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="box1">
+        <div class="header">
+            <h2>Please enter your details</h2>
+        </div>
+        <form onsubmit="return validate_register()" class="form"  action="#">
+            <div class="form-controler">
+                <label for="text">Name :</label>
+                <input type="text" id="name" value="" placeholder="Enter full name">
+            </div> 
+            <div class="form-controler">
+                <label for="text">Email :</label>
+                <input type="text" id="email" value="" placeholder="Enter Email Address">
+            </div> 
+            <div class="form-controler">
+              <label for="text">Phone number :</label>
+              <input type="text" id="phone_num" placeholder="Enter the Mobile Number">
+            </div >
+            <div class="form-controler">
+              <label for="text">password :</label>
+              <input type="password" id="pass" value="" placeholder="Enter Password">
+            </div>
+            <div class="form-controler">
+              <label for="text">Confirm password</label>
+              <input type="password" id="con_pass" value="" placeholder="Enter password again">
+            </div>
+            <br><br>
+            <div >
+                <input type="submit" value="submit" class="btn">
+            </div>
+            <br>    
+            <div>
+                <p>Alreay have an account, Please <a href="login.html">Log in!</a></p>
+            </div>
+          </form>
+    </div>
+</body>
+</html>

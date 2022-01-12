@@ -1,0 +1,92 @@
+<html>
+<head>
+<style>
+.box
+{
+    margin:100px 500px;
+    width:400px;
+    height:260px;
+    border:2px solid red;
+    position:relative;
+    border:2px solid white;
+     background-color:#33FFBD;
+}
+.box1
+{
+     position:absolute;
+     padding:50px 10px;
+ }
+input,button
+{
+     height:30px;
+}
+</style>
+</head>
+<body>
+<div class="box">
+<div class="box1">
+<table>
+ <tr>
+<td>Enter first number:</td>
+  <td><input type="text" id="num1" required style="border:0px ;border-radius:5px"></td>
+ </tr>
+ 
+<tr>
+<td>Enter second number:</td>
+<td><input type="text" id="num2" required style="border:0px ;border-radius:5px"></td>
+</tr>
+
+<tr>
+<td>Enter third number:</td>
+<td><input type="text" id="num3" required style="border:0px ;border-radius:5px"></td>                             
+ </tr>
+                            
+</table>
+<input type="submit" value="Click here" onclick="fun();"  style ="background-color:black;color: white;border:0px ;border-radius:5px">
+
+<h2></h2>
+	           
+</div>
+</div>
+</body>
+<script>
+
+function fun()
+{
+        var num1=document.getElementById("num1").value;
+        var num2=document.getElementById("num2").value;
+        var num3=document.getElementById("num3").value;
+   
+   //checking whether the input value is a number or not 
+        var v1=isNaN(num1);
+        var v2=isNaN(num2);
+        var v3=isNaN(num3);
+        
+        var largest;
+        if(num1&&num2&&num3&&!v1&&!v2&&!v3)
+        {
+            console.log(num1);
+            console.log(num2);
+            console.log(num3);
+
+            if(num1 >= num2 && num1 >= num3)
+           {
+                largest = num1;
+            }
+            else if (num2 >= num1 && num2 >= num3) 
+          {
+                largest = num2;
+            }
+            else
+          {
+                largest = num3;
+            }
+
+                var n=document.querySelector("h2");
+                n.innerHTML="Largest"+" "+largest;
+            }
+        else
+        	alert("Please enter a number");
+   	  }
+   	 </script>
+ </html> 

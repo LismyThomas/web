@@ -1,0 +1,25 @@
+<html >
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+    <body>
+        <div class="box1">
+            <div class="header-login">
+                <h2>Sign in</h2>
+            </div>
+            <form onsubmit="return validate_login()" action="home.html" class="form"> 
+                <div class="form-controler">
+                    <input type="text" id="uname" placeholder="Username" >
+                </div>
+                <div class="form-controler">
+                    <input type="password" id="pass" placeholder="Password">
+                </div>
+                <button type="submit" class="btn">submit</button >
+                <br><br>
+                <p>No account please <a href="register.html">Register</a> here</p>
+            </form>
+        </div>
+    </body>
+</html>
